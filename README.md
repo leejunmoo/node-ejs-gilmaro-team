@@ -3,7 +3,7 @@
 # 팀프로젝트 : GILMARO 스마트 웹앱 구현 
 by)김선민(조장/피그마 디자인 시안/프론트엔드),  
    권동환(팀원/백엔드/프론트엔드),      
-   이준무(팀원/피그마 디자인 시안/ 프론트엔드/백엔드)
+   이준무(팀원/피그마 디자인 시안/ 프론트엔드/백엔드) <span style='background-color: #fff5b1'>노랑형관펜</span>
 ### 기존 길마로 홈페이지를 참고하여 프로젝트를 진행 하였음
 #### 프로젝트 기간 : 2023.01.09~2023.01.18
 #### 기본 업체 홈페이지 : www.gilmaro.co.kr/
@@ -26,12 +26,9 @@ by)김선민(조장/피그마 디자인 시안/프론트엔드),
 # 페이지별 소개
 <details>
 <summary>공통사항</summary>
-
-  <details>
-  
-      - <summary>header</summary> 
-       
-
+    <details>
+      <summary>header</summary>    
+        
 ![image](https://user-images.githubusercontent.com/113665599/213631073-4e97bbed-aad9-4170-88b7-c58b2c18c213.png)
 ![image](https://user-images.githubusercontent.com/113665599/213631229-9baf86c1-eaa8-4d2e-ad85-53048d758e27.png)
 
@@ -50,7 +47,7 @@ by)김선민(조장/피그마 디자인 시안/프론트엔드),
 ![image](https://user-images.githubusercontent.com/113665599/213632702-5e1cd3d0-9a9f-4241-8ecc-46f40ae26b5c.png)   
 
 ### 실제 담은 상품, 삭제, 수량 및 색상 변경 금액 합산 기능 구현     
-✅ 상품정보: 이름, 금액 등 실제 존재하는 정보를 불러옴 ( session 활용 )      
+✅ <span style='background-color: #ffff5b1'>상품정보: 이름, 금액 등 실제 존재하는 정보를 불러옴 ( session 활용 )</span>      
 ✅ 수량 및 색상 변경: 변경시 밑에 합산 금액 실시간 변경 및 합산금액 자동 산출 ( ejs 문법 활용 )
 
 
