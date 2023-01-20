@@ -27,11 +27,11 @@ by)김선민(조장/피그마 디자인 시안/프론트엔드),
 <details>
 <summary>공통사항</summary>
 
+  <details>
+  
+      - <summary>header</summary> 
+       
 
-
-
-<details>
-<summary>header</summary>
 ![image](https://user-images.githubusercontent.com/113665599/213631073-4e97bbed-aad9-4170-88b7-c58b2c18c213.png)
 ![image](https://user-images.githubusercontent.com/113665599/213631229-9baf86c1-eaa8-4d2e-ad85-53048d758e27.png)
 
@@ -44,14 +44,17 @@ by)김선민(조장/피그마 디자인 시안/프론트엔드),
 
 
 </details>
+<details>
+<summary>장바구니</summary>    
 
-## 장바구니     
 ![image](https://user-images.githubusercontent.com/113665599/213632702-5e1cd3d0-9a9f-4241-8ecc-46f40ae26b5c.png)   
 
 ### 실제 담은 상품, 삭제, 수량 및 색상 변경 금액 합산 기능 구현     
 ✅ 상품정보: 이름, 금액 등 실제 존재하는 정보를 불러옴 ( session 활용 )      
 ✅ 수량 및 색상 변경: 변경시 밑에 합산 금액 실시간 변경 및 합산금액 자동 산출 ( ejs 문법 활용 )
 
+
+</details>
 
 
 
