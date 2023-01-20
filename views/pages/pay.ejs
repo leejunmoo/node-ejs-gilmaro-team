@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>pay</title>
+    <!-- 제이쿼리 -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="css/pay.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
+</head>
+<body>
+    <div class="container">
+        <!-- header -->
+        <%- include('components/header.ejs') %> 
+        <h1>전체상품(<span id="count"><%=products.length%></span>)</h1>
+
+        <div class="product-info">
+                <div class="info-box">
+                        <% for(let i=0; i < products.length; i++) { %>
+                            <div class="info">
+                                <img src= "<%=products[i].imgUrl %>" alt="상품사진">
+                                <div class="info-text">
+                                <div class="form-box">
+                                    <h4><%= products[i].brand_en %></h4>
+                                    <form action="/delete/<%= products[i].id %>" method="post">
+                                        <button type="submit">삭제</button>
+                                    </form>
+                                </div>
+                                <p><%= products[i].brand_en %> <%= products[i].type_1 %> <%= products[i].name %></p>
+                                <p>정상가: <span class="re" id="price<%=[i]%>" data-value="<%= products[i].price %>"><%= products[i].price %></span>원</p>
+                                <p>수량: 1개</p>
+                                <p>색상: 
+                                    <select name="color" id="color">
+                                        <option value="색상1"><%= products[i].color %></option>
+                                    </select>
+                                </p>
+                            </div>
+                            </div>
+                           <div class="itemea">
+                            <p>수량변경</p>
+                                <div class="eabox">
+                                    <input type="button" data-item="<%=[i]%>" value="-" class="eaminus">
+                                    <div id="ea">
+                                        <p class="ea1" id="ea<%=[i]%>">1</p>
+                                    </div>
+                                    <input data-item="<%=i%>" type="button" value="+" class="eaplus">
+                                </div>
+                                <div id="paycheck<%=[i]%>">
+                                    <p id="allprice<%=[i]%>"><%= products[i].price.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",") %>원</p>
+                                    <input class= 'reAll' value="<%=products[i].price %>" id="allprice2<%=[i]%>">
+                                </div>
+                                
+                            </div>                        
+                        <%}%>
+                        
+                        
+                    
+                </div>
+            
+         </div><!--product-info-->
+            <div class="pay-box">
+                <table>
+                    <tr>
+                        <td>총 상품금액</td>
+                        <td id="total">0</td>
+                    </tr>
+                    <tr>
+                        <td>배송비</td>
+                        <td>3,000원</td>
+                    </tr>
+                    <tr>
+                        <td >합계</td>
+                        <td id="realtotal">51,000</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="order">
+                <h4>주문하기</h4>
+            </div>
+        </div>
+        <%- include('components/footer.ejs') %> 
+        <%- include('components/bottomNav.ejs') %>
+        <%- include('components/sitemap.ejs') %> 
+        </div> 
+    </div><!--container-->
+    <script src="js/ea.js"></script>
+    <script src="js/sitemap.js"></script>
+</body>
+</html>

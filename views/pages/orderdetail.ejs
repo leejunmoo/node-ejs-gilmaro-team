@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>orderdetail</title>
+    <!-- 제이쿼리 -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="/css/orderdetail.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">   
+</head>
+<body>
+    <div class="container">
+        <!-- header -->
+        <%- include('components/header.ejs') %> 
+        <!-- 본문 -->
+        <h1>관리자(주문제작상세내역)</h1>
+        <table class="order">
+            <% order.forEach(order => {%>
+                <tr>
+                    <td>이름:<%= order.name %></td>
+                    <td>연락처: <%= order.phone %></td>
+                </tr>
+                <tr>
+                    <td colspan="2">이메일: <%= order.email %></td>
+                    <!-- <td></td> -->
+                </tr>
+                <tr>
+                    <td colspan="2">제목: <%= order.title %></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <div>
+                            <%= order.detail %>
+                        </div>
+                            
+                       
+                         
+                    </td>
+                </tr>
+            <%}) %>
+            
+        </table>
+        <%- include('components/footer.ejs') %> 
+        <%- include('components/bottomNav.ejs') %>
+        <%- include('components/sitemap.ejs') %> 
+    </div>
+
+
+    <script src="/js/check.js"></script>
+    <script src="/js/sitemap.js"></script>
+</body>
+</html>

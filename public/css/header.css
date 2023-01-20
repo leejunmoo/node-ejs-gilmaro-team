@@ -1,0 +1,220 @@
+/* header.css */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Noto Sans KR', sans-serif, 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+.container{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.header{
+    width: 100%;
+}
+ul li{
+    list-style-type: none;
+}
+.container .nav {
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    height: 56px;    
+    /* outline: 1px solid red; */
+    padding: 0 16px;
+}
+.container .nav .logo img{
+    /* outline: 1px solid blue; */
+    margin-top: 10px;
+}
+.container .nav ul {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2.5px;
+}
+.container .nav .icon-box{
+    /* outline: 1px solid red; */
+    display: flex;
+}
+.container .nav .icon-box button{
+    background-color: transparent;
+    border: none;
+}
+
+/* 검색버튼 */
+
+.search_form{
+    /* outline: 1px solid red; */ 
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 16px;
+    overflow: hidden;
+    opacity: 0;
+    height: 0;
+}
+.search_form .searchnav #search1{
+    padding: 5px 10px;
+    border: 1px solid #2f2f2f;
+    border-radius: 5px;
+}
+.search_form .searchnav #search2{
+    padding: 5px 10px;
+    border: 1px solid #2f2f2f;
+    border-radius: 5px;
+    background-color: #2f2f2f;
+    color: #fff;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.search_form.show{
+    /* outline: 1px solid red;  */
+    height: 40px;
+    padding-right: 16px;
+    display: block;
+    opacity: 1;
+    height: 100%;
+    margin: 5px 16px;
+    text-align: right;
+}
+/* site-map.css */
+.site-map {
+    font-size: 15px;
+    overflow: hidden;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* 사이트맵 보임 */
+.site-map.show {
+    display: block;
+    position: fixed;
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    z-index: 998;
+    transition: 0.4s;
+    opacity: 1;
+}
+
+.site-map .site-map-header .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.site-map .site-map-header {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 0 20px;
+}
+
+/* site-map-nav */
+.site-map .site-map-nav {
+    padding: 0 25px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.site-map .site-map-nav .depth1-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-map .site-map-nav .depth1 li {
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+.site-map .site-map-nav .depth1 li a{
+    color: #000;
+}
+
+/* 2단계메뉴 안보임 */
+.site-map .site-map-nav .depth2 {
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+}
+
+/* 2단계메뉴 보임 */
+.site-map .site-map-nav .depth2.show {
+    opacity: 1;
+    height: 100%;
+    transition: 0.6s;
+}
+
+.site-map .site-map-nav .depth2 li {
+    padding-left: 50px;
+}
+.site-map .site-map-nav .depth2 li a{
+    color: #000;
+}
+
+/* 로그인 아이콘 */
+.site-map .login-box {
+    margin-top: 200px;
+    padding: 0 25px;
+    width: 100%;   
+}
+.site-map .login-box img{
+   margin-left: 0; 
+}
+
+/* btn.css */
+body {
+    position: relative;
+}
+
+.side-btn {
+    position: fixed;
+    left: calc(100% - 90px);
+    bottom: 170px;
+    width: 70px;
+    height: 70px;
+    background-color: #000;
+    border-radius: 20px 20px 0 20px;
+    text-align: center;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.side-btn .side-btn-box a p {
+    color: #fff;
+}
+.bottom-box{
+    width: 100%;
+    margin: 0 auto;
+}
+.bottom-nav {
+    width: 100%;
+    height: 70px;
+    border-top: 1px solid #ccc;
+    /* outline: 1px solid #2f2f2f; */
+    position: fixed;
+    bottom: 0px; /* 수정할떄 -50px 이 딱 안보이는 좌표 */
+    /* background-color: rgba(0, 0, 0, 0.9);  수정할때 이색*/
+    background-color: #fff;
+    margin: 0 auto;
+}
+
+ .bottom-nav ul {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 19px;
+}
