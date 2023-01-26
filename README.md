@@ -101,6 +101,10 @@ by)김선민(조장/피그마 디자인 시안/프론트엔드),
 
 ***
 
+### lnb - 브랜드 클릭시 제품군에따른 분류기능
+
+***
+
 
 
 
@@ -109,13 +113,35 @@ by)김선민(조장/피그마 디자인 시안/프론트엔드),
 <details>
 <summary>제품 상세소개</summary>
 
+![image](https://user-images.githubusercontent.com/113665599/214778126-c016bc78-22ef-4403-9a6b-309e6213349d.png)
 
+***
+
+### 제품상세소개 에서만 나오는 하단 btn-box / 제품이름, 가격, 브랜드 등 모두 DB에서 가져옴
+
+***
+
+✅ 장바구니담기: 찜목록과는 별개로 사용됨 클릭시 장바구니(결제)홈페이지에 제품이 담김   
+✅ 바로구매하기: 실제 결제 기능은 미구현. 클릭시 장바구니(결제)홈페이지로 이동 ( 로그인 필요 )
 
 
 </details>
 <details>
 <summary>주문제작의뢰</summary>
 
+![image](https://user-images.githubusercontent.com/113665599/214778957-081e412e-68eb-4d89-ac03-9b4b2966df63.png)
+![image](https://user-images.githubusercontent.com/113665599/214779561-a45ff1a8-feef-4fa0-a478-46e35d0fc4be.png)
+![image](https://user-images.githubusercontent.com/113665599/214779574-16f61a61-d939-438a-93e9-5a30ece187e4.png)
+
+
+***
+
+### 주문제작 버튼: 모든 페이지에서 하단nav 처럼 떠다니게 만듬 클릭시 주문제작의뢰서로 이동
+
+***
+
+✅ 이름, 이메일, 연락처 : 빈값 금지 설정 및 규격(패턴)에 맞게 입력값 설정   
+✅ 입력한 내용이 그대로 DB에 저장되서 관리자전용페이지에서 확인할수 있음
 
 
 
@@ -123,15 +149,32 @@ by)김선민(조장/피그마 디자인 시안/프론트엔드),
 <details>
 <summary>관리자전용페이지</summary>
 
+![image](https://user-images.githubusercontent.com/113665599/214780357-5d786fd0-83fe-4409-865c-fd63fdb77492.png)
+![image](https://user-images.githubusercontent.com/113665599/214780405-964d86d8-aebe-447c-88bf-6686458653ce.png)
 
+
+***
+
+### 관리자전용아이디로 로그인필요 /  저장된 DB를 Table 형식으로 보여줌
+
+***
+
+✅ 순번, 이름, 이메일주소, 연락처: 실제 저장된 DB에서 정보를 불러와 보여줌   
+✅ 관리자(주문제작상세내역): 이 페이지또한 실제 저장된 DB에서 정보를 불러와 보여줌
 
 
 </details>
 <details>
 <summary>내정보</summary>
 
+![image](https://user-images.githubusercontent.com/113665599/214781289-65d10f6b-5c0b-4732-9c8e-e2ea1919da87.png)
 
+***
 
+### 실제 정보 수정 및 회원탈퇴 가능 input 박스를 이용해   
+### 따로 수정버튼 을 누르고 수정하는 방식x 바로입력후 밑 수정버튼 클릭
+
+***
 
 </details>
 
