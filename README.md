@@ -57,7 +57,8 @@ by)김선민(조장/피그마 디자인 시안/프론트엔드),
 
 ***
 
-✅ <span style='background-color: #ffff5b1'>상품정보: 이름, 금액 등 실제DB 정보를 불러옴 ( session+storage 활용 )</span>      
+✅ 상품정보: 이름, 금액 등 실제DB 정보를 불러옴 ( session+storage 활용 )   
+  장바구니에담기를 눌렀던 제품을 session 에 저장 후 장바구니(결제) 페이지 이동시 session 에 저장된 정보를 DB에서 찾아 제품을 불러옴     
 ✅ 수량 및 색상 변경: 변경시 밑에 합산 금액 실시간 변경 및 합산금액 자동 산출 ( ejs 문법 활용 )
 
 
