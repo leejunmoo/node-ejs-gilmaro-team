@@ -172,7 +172,7 @@ by)김선민(조장/피그마 디자인 시안/프론트엔드),
 
 </details>
 <details>
-<summary>내정보</summary>
+<summary>내정보</summary>    
 
 ![image](https://user-images.githubusercontent.com/113665599/214781289-65d10f6b-5c0b-4732-9c8e-e2ea1919da87.png)
 
@@ -183,7 +183,22 @@ by)김선민(조장/피그마 디자인 시안/프론트엔드),
 
 ***
 
+</details>    
+<details>    
+<summary>회원가입</summary>    
+
+![회원가입](https://user-images.githubusercontent.com/113665599/216483912-f661fb09-171f-45b2-8525-5967ba05b1f2.jpg)
+
+****
+
+### input 박스로 구성, 태그에 빈값방지 추가, 각각의 칸에 맞는 형식입력추가
+
+****    
+✅ 아이디 중복확인 같은 경우 클릭할 시 저장되어있는 DB와 비교해 아이디 확인체크
+✅ 회원가입 구현 완료. 누를 시 DB에 형식에 맞게 저장
+
 </details>
+
 
 
 
